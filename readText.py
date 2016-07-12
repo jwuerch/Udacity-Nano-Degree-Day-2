@@ -16,7 +16,9 @@ def checkProfanity(textToCheck):
      print "\n"
      if output == "true":
          print "Profanity!"
-     else:
+     elif output == "false":
          print "Safe."
+     else:
+         print "Unable to read file."
      connection.close()
 readText()
